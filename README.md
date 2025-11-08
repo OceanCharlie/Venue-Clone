@@ -57,8 +57,8 @@ The project was developed as part of the **Web Development Teaching Assistant Se
 1. Clone the repository:
 
    ```bash
-   git clone [your-repository-link]
-   cd [your-project-folder]
+   git clone https://github.com/OceanCharlie/Venue-Clone
+   cd Venue-Clone
    ```
 
 2. Open the `index.html` file directly in your browser:
