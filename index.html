@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Venue - Best Finder For You. Temukan tempat terbaik untuk kebutuhan Anda."
+    />
+    <meta name="keywords" content="venue, finder, tempat, lokasi, indonesia" />
+    <meta name="author" content="Ocean" />
+    <title>Venue - Best Finder For You</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header id="header">
+      <nav class="navbar" aria-label="Main Navigation">
+        <div class="navbar-container">
+          <div class="logo-wrapper">
+            <a class="navbar-brand" href="/" aria-label="Go to homepage">
+              <img
+                src="img/logo.png"
+                alt="Venue company logo"
+                class="logo"
+                loading="eager"
+              />
+            </a>
+          </div>
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false"
+            aria-controls="navbar-menu"
+            aria-label="Toggle navigation menu"
+          >
+            <span class="sr-only">Menu</span>
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </button>
+          <div class="navbar-menu" id="navbar-menu">
+            <ul class="navbar-links" role="menubar">
+              <li role="none">
+                <a href="#popular" role="menuitem">Popular</a>
+              </li>
+
+              <li class="dropdown" role="none">
+                <button
+                  class="dropdown-toggle"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="dropdown-content-menu"
+                  aria-haspopup="true"
+                >
+                  Most Visited
+                  <span class="dropdown-arrow" aria-hidden="true">▾</span>
+                </button>
+                <ul
+                  class="dropdown-content"
+                  id="dropdown-content-menu"
+                  role="menu"
+                >
+                  <li role="none">
+                    <a href="#most-visited-1" role="menuitem">Most Visited 1</a>
+                  </li>
+                  <li role="none">
+                    <a href="#most-visited-2" role="menuitem">Most Visited 2</a>
+                  </li>
+                  <li role="none">
+                    <a href="#most-visited-3" role="menuitem">Most Visited 3</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li role="none">
+                <a href="#blog" role="menuitem">Blog Entries</a>
+              </li>
+              <li role="none">
+                <a href="#services" role="menuitem">Our Services</a>
+              </li>
+              <li role="none">
+                <a href="#contact" role="menuitem">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section class="banner" aria-label="Hero Banner and Search">
+        <div class="banner-content">
+          <div class="blue-line" aria-hidden="true"></div>
+          <h1>Best Finder For You</h1>
+          <p>Suspendisse eu lorem massa. Integer sit amet posuere tellus.</p>
+          <div class="blue-button">
+            <a href="#popular">Discover More</a>
+          </div>
+
+          <div class="search">
+            <form class="search-box" role="search" aria-label="Search form">
+              <input
+                name="name"
+                type="text"
+                placeholder="Your Name.."
+                class="search-input"
+                aria-label="Your Name"
+                required
+              />
+              <input
+                name="location"
+                type="text"
+                placeholder="Type Location.."
+                class="search-input"
+                aria-label="Location"
+                required
+              />
+              <select
+                class="search-select"
+                aria-label="Categories"
+                name="category"
+                required
+              >
+                <option value="">Select Categories</option>
+                <option value="shops">Shops</option>
+                <option value="hotels">Hotels</option>
+                <option value="restaurants">Restaurants</option>
+                <option value="events">Events</option>
+              </select>
+              <button type="submit" class="search-button">Search Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section
+        id="popular"
+        class="carousel"
+        aria-label="Popular Places Carousel"
+      >
+        <div class="section-title">
+          <h3>Popular Places</h3>
+          <h1>Integer sapien odio</h1>
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel-track" id="carousel-track" aria-live="polite">
+            <article class="card">
+              <img
+                src="img/sore.jpg"
+                alt="Aenean dolor - sunset view"
+                loading="lazy"
+              />
+              <div class="caption">
+                <h3>Aenean dolor</h3>
+                <p>18 listings</p>
+                <button
+                  class="add-btn"
+                  aria-label="Add Aenean dolor to favorites"
+                  type="button"
+                >
+                  +
+                </button>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="img/sore.jpg"
+                alt="Nunc at quam - night view"
+                loading="lazy"
+              />
+              <div class="caption">
+                <h3>Nunc at quam</h3>
+                <p>55 listings</p>
+                <button
+                  class="add-btn"
+                  aria-label="Add Nunc at quam to favorites"
+                  type="button"
+                >
+                  +
+                </button>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="img/sore.jpg"
+                alt="Fusce ac turpis - aerial view"
+                loading="lazy"
+              />
+              <div class="caption">
+                <h3>Fusce ac turpis</h3>
+                <p>66 listings</p>
+                <button
+                  class="add-btn"
+                  aria-label="Add Fusce ac turpis to favorites"
+                  type="button"
+                >
+                  +
+                </button>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="img/sore.jpg"
+                alt="Lorem ipsum - city view"
+                loading="lazy"
+              />
+              <div class="caption">
+                <h3>Lorem ipsum</h3>
+                <p>82 listings</p>
+                <button
+                  class="add-btn"
+                  aria-label="Add Lorem ipsum to favorites"
+                  type="button"
+                >
+                  +
+                </button>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="img/sore.jpg"
+                alt="Praesent nec - beach view"
+                loading="lazy"
+              />
+              <div class="caption">
+                <h3>Praesent nec</h3>
+                <p>76 listings</p>
+                <button
+                  class="add-btn"
+                  aria-label="Add Praesent nec to favorites"
+                  type="button"
+                >
+                  +
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel-controls">
+            <button
+              class="carousel-btn carousel-btn-prev"
+              aria-label="Previous slide"
+              type="button"
+            >
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button
+              class="carousel-btn carousel-btn-next"
+              aria-label="Next slide"
+              type="button"
+            >
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="blog" class="featured" aria-label="Featured Listings">
+        <div class="section-title">
+          <h3 class="subheading">Featured Listings</h3>
+          <h1 class="heading">Discover the Best Places</h1>
+        </div>
+
+        <div class="featured-content">
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="img/senja.jpg"
+                alt="A building at sunset, featured listing"
+                loading="lazy"
+              />
+              <div class="date-circle" aria-hidden="true">
+                <div class="day">28</div>
+                <div class="month">AUGUST</div>
+              </div>
+              <div class="stars" aria-label="5 out of 5 stars" role="img">
+                ★★★★★
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Lorem ipsum dolor</h3>
+              <a href="#category-one">Category One</a>
+              <p>
+                Vestibulum id est eu felis vulputate hendrerit. Suspendisse
+                dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.
+              </p>
+            </div>
+            <div class="card-actions">
+              <button
+                type="button"
+                aria-label="Add Lorem ipsum dolor to favorites"
+              >
+                ADD TO FAVORITES
+              </button>
+              <button type="button">CONTINUE READING</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="img/senja.jpg"
+                alt="A city skyline, featured listing"
+                loading="lazy"
+              />
+              <div class="date-circle" aria-hidden="true">
+                <div class="day">20</div>
+                <div class="month">SEPTEMBER</div>
+              </div>
+              <div class="stars" aria-label="5 out of 5 stars" role="img">
+                ★★★★★
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Nullam nibh lacus</h3>
+              <a href="#category-two">Category Two</a>
+              <p>
+                Mauris sit amet quam congue, pulvinar urna et, congue diam.
+                Suspendisse eu lorem massa. Integer sit amet posuere.
+              </p>
+            </div>
+            <div class="card-actions">
+              <button
+                type="button"
+                aria-label="Add Nullam nibh lacus to favorites"
+              >
+                ADD TO FAVORITES
+              </button>
+              <button type="button">CONTINUE READING</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="img/senja.jpg"
+                alt="A road in the hills, featured listing"
+                loading="lazy"
+              />
+              <div class="date-circle" aria-hidden="true">
+                <div class="day">12</div>
+                <div class="month">OCTOBER</div>
+              </div>
+              <div class="stars" aria-label="5 out of 5 stars" role="img">
+                ★★★★★
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Suspendisse semper non</h3>
+              <a href="#category-three">Category Three</a>
+              <p>
+                Praesent iaculis gravida elementum. Proin fermentum neque
+                facilisis semper pharetra. Sed vestibulum vehicula tincidunt.
+              </p>
+            </div>
+            <div class="card-actions">
+              <button
+                type="button"
+                aria-label="Add Suspendisse semper non to favorites"
+              >
+                ADD TO FAVORITES
+              </button>
+              <button type="button">CONTINUE READING</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        id="services"
+        class="services"
+        aria-label="Our Services and Pricing"
+      >
+        <div class="section-title">
+          <h3 class="subheading">Our Services</h3>
+          <h1 class="heading">Best Template Site</h1>
+        </div>
+
+        <div class="services-container">
+          <article class="service-card">
+            <div class="icon">
+              <img
+                src="img/service_icon_1.png"
+                alt="High Quality Design Icon"
+                loading="lazy"
+              />
+            </div>
+            <h3>High Quality Design</h3>
+            <p>
+              Etiam viverra nibh at lorem hendrerit porta non nec ligula. Donec
+              hendrerit porttitor pretium. Suspendisse fermentum nec risus.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">
+              <img
+                src="img/service_icon_2.png"
+                alt="Fully Customizable Icon"
+                loading="lazy"
+              />
+            </div>
+            <h3>Fully Customizable</h3>
+            <p>
+              Vivamus nec vehicula felis, sit amet convallis ex. Aenean dolor
+              risus, rutrum at tincidunt eget, placerat ac mauris.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="icon">
+              <img
+                src="img/service_icon_3.png"
+                alt="Best HTML CSS Layout Icon"
+                loading="lazy"
+              />
+            </div>
+            <h3>Best HTML CSS Layout</h3>
+            <p>
+              Praesent nec dui sed urna pharetra dapibus at ac elit. Aenean
+              hendrerit metus leo, quis viverra purus condimentum nec.
+            </p>
+          </article>
+        </div>
+        <hr class="divider" aria-hidden="true" />
+
+        <div class="pricing">
+          <div class="section-title">
+            <h3 class="subheading">Our Pricing</h3>
+            <h1 class="heading">Affordable Plans</h1>
+          </div>
+
+          <div class="pricing-container">
+            <article class="pricing-card">
+              <div class="pricing-header">
+                <h3>Starter Plan</h3>
+                <p class="price">$25</p>
+                <span class="per">/monthly</span>
+              </div>
+              <ul class="features">
+                <li>100 Suspendisse dapibus</li>
+                <li>10x Paleo celiac enamel</li>
+                <li>Williamsburg organic post ironic</li>
+                <li>Helvetica pinterest yuccie</li>
+                <li>Plaid shabby chic godard</li>
+              </ul>
+              <a
+                href="#pricing"
+                class="btn"
+                aria-label="Buy Starter Plan for $25/monthly"
+                >Buy It Now</a
+              >
+            </article>
+
+            <article class="pricing-card">
+              <div class="pricing-header">
+                <h3>Premium Plan</h3>
+                <p class="price">$45</p>
+                <span class="per">/monthly</span>
+              </div>
+              <ul class="features">
+                <li>200 Suspendisse dapibus</li>
+                <li>20x Paleo celiac enamel</li>
+                <li>Williamsburg organic post ironic</li>
+                <li>Helvetica pinterest yuccie</li>
+                <li>Plaid shabby chic godard</li>
+              </ul>
+              <a
+                href="#pricing"
+                class="btn"
+                aria-label="Buy Premium Plan for $45/monthly"
+                >Buy It Now</a
+              >
+            </article>
+
+            <article class="pricing-card">
+              <div class="pricing-header">
+                <h3>Advanced Plan</h3>
+                <p class="price">$85</p>
+                <span class="per">/monthly</span>
+              </div>
+              <ul class="features">
+                <li>400 Suspendisse dapibus</li>
+                <li>40x Paleo celiac enamel</li>
+                <li>Williamsburg organic post ironic</li>
+                <li>Helvetica pinterest yuccie</li>
+                <li>Plaid shabby chic godard</li>
+              </ul>
+              <a
+                href="#pricing"
+                class="btn"
+                aria-label="Buy Advanced Plan for $85/monthly"
+                >Buy It Now</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="video-section" aria-label="Video Presentation">
+        <div class="video-background">
+          <iframe
+            src="https://www.youtube.com/embed/CZJWXm5KKyM?autoplay=1&mute=1&loop=1&playlist=CZJWXm5KKyM&controls=0&showinfo=0&rel=0&modestbranding=1"
+            frameborder="0"
+            allow="autoplay; encrypted-media; fullscreen"
+            allowfullscreen
+            title="Venue Video Presentation Background"
+            loading="lazy"
+            aria-hidden="true"
+          >
+          </iframe>
+        </div>
+
+        <div class="video-overlay">
+          <div class="video-content">
+            <h3 class="subheading">Video Presentation</h3>
+            <h1 class="heading">Sed et risus ac sapien congue mattis.</h1>
+            <a
+              href="https://youtu.be/CZJWXm5KKyM?si=LEhMmF1YaP9gU7Kq"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="play"
+              aria-label="Play Video Presentation on YouTube"
+            >
+              <i class="fa-solid fa-play" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="contact-us"
+        aria-label="Call to Action Contact"
+      >
+        <div class="section-title">
+          <h3 class="subheading">Contact Us</h3>
+          <h1 class="heading">Vivamus nec vehicula felis</h1>
+          <a href="#contact" class="btn">Talk to Us</a>
+        </div>
+      </section>
+      <section class="map" aria-label="Company Location Map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d177883.2580062802!2d15.964363999999998!3d45.84277475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d692c902cc39%3A0x3a45249628fbc28a!2sZagreb%2C%20Kroasia!5e0!3m2!1sid!2sid!4v1762624276557!5m2!1sid!2sid"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Location of Menteng, Central Jakarta"
+        ></iframe>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <div class="logo">
+            <i class="fa-brands fa-vimeo footer-vimeo-icon"></i>
+            <span class="logo-text">Venue</span>
+          </div>
+          <p>
+            Mauris sit amet quam congue, pulvinar urna et, congue diam.
+            Suspendisse eu lorem massa. Integer sit amet posuere tellus, id
+            efficitur leo. In hac habitasse platea dictumst.
+          </p>
+          <div class="social-icons">
+            <a
+              href="#"
+              aria-label="Follow us on Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-facebook-f" aria-hidden="true"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="Follow us on Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-twitter" aria-hidden="true"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="Follow us on LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="Follow us on YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-youtube" aria-hidden="true"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="Contact us on WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-whatsapp" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Useful Links</h3>
+          <div class="links-grid">
+            <ul>
+              <li><a href="#">Help FAQs</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">My Profile</a></li>
+              <li><a href="#">How It Works?</a></li>
+              <li><a href="#">More About Us</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Our Clients</a></li>
+              <li><a href="#">Partnerships</a></li>
+              <li><a href="#">Blog Entries</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Information</h3>
+          <p>
+            Praesent iaculis gravida elementum. Proin fermentum meque facilisis
+            semper pharetra. Sed vestibulum vehicula tincidunt.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          Copyright © 2025 Spade Idn - Design: Template Modified by
+          <a href="https://www.instagram.com/oceancharlie18/"
+            ><strong>Ocean</strong></a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
