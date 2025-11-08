@@ -1,6 +1,6 @@
 # Venue (Static Frontend Clone)
 
-**Project Context:** Teaching Assistant Selection Test
+**Project Context:** Teaching Assistant Selection Test <br>
 **Version:** 1.0 (Static HTML/CSS/JavaScript)
 
 ---
